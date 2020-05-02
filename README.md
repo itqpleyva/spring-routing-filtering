@@ -16,9 +16,6 @@ Dependencies:
 <p> In addition, a <b>GatewayServiceZuul</b> gateway is created to filter the routes of the rest service, in this service a <b>FilterPre</b> filter is created that runs before consuming any of the endpoints in <b>RoutingFilteringExample</b> microservice</p>
 <img src = "filterClass.png" />
 <p>obtaining as a result a console log message with the characteristics of the executed request</p>
-
 <img src = "filterservice.png" />
-
 <p> For the <b>GatewayServiceZuul</b> to function as a reverse proxy it is necessary to add the <b>@EnableZuulProxy</b> annotation and inject a bean of the <b>FilterPre</b> class </p>
-
 <img src = "beanFilter.png" />
